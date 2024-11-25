@@ -548,6 +548,11 @@ body{
 .role{
     font-size: 40px;
 }
+
+.hero-section-right{
+  overflow: hidden;
+}
+  
 /*Mid Section CSS*/
 .mid-section{
     display: flex;
