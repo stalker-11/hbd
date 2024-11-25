@@ -588,8 +588,7 @@ body{
 }
 
 .hero-section-right{
-  overflow-x: hidden;
-  overflow-x: inherit;
+  overflow: hidden;
 }
 /*Mid Section CSS*/
 .mid-section{
