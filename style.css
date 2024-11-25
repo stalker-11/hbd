@@ -589,7 +589,7 @@ body{
 
 .hero-section-right{
   overflow-x: hidden;
-  overflow-x: visible;
+  overflow-x: inherit;
 }
 /*Mid Section CSS*/
 .mid-section{
@@ -696,6 +696,11 @@ body{
   }
 }
 
+/*music icon css*/
 .music-icon-container {
   position: absolute;
+}
+.music-icon img {
+  width: 30px;
+  height: 30px;
 }
