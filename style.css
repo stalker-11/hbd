@@ -637,7 +637,10 @@ body{
 
    /*faded text css*/
     .msg-fade-text{
-    font-size:50px;
+    display: flex;
+    position: relative;
+    font-size: 50px;
+    margin-left: 60%;
   }
 
 
