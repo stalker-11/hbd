@@ -60,10 +60,11 @@ body{
     display:flex;
     justify-content: center;
     align-items: center;
+    height: fit-content;
     gap: 5rem;
     margin: 4rem auto;
     padding: 0 1rem;
-    padding-bottom: 8rem;
+    padding-bottom: 6rem;
 }
 
 .hero-section-left{
@@ -268,7 +269,8 @@ body{
     display: flex;
     height: 700px;
     justify-content: space-between;
-    gap:40px
+    gap:40px;
+    padding-bottom: 6rem;
 }
 .mid-section-left{
     align-self: center;
@@ -444,6 +446,41 @@ body{
   }
 
 
+  /*Background Music CSS*/
+  .music-icon-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+  }
+  
+  .music-icon {
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    opacity: 0.7;
+  }
+  
+  .music-icon img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+    animation: scaleInOut 2s infinite;
+  }
+  
+  .music-icon:hover img {
+    transform: scale(1.1);
+  }
+  
+  @keyframes scaleInOut {
+    0%, 100% {
+      transform: scale(1); /* Default size */
+    }
+    50% {
+      transform: scale(1.2); /* Scaled-up size */
+    }
+  }
+
   /*loader*/
 
 .top-loader-wrapper {
@@ -552,7 +589,6 @@ body{
 .hero-section-right{
   overflow: hidden;
 }
-  
 /*Mid Section CSS*/
 .mid-section{
     display: flex;
@@ -619,7 +655,7 @@ body{
   }
   
   .msg-right h1{
-    font-size: 28px;
+    font-size: 20px;
     text-align: center;
   }
   .msg-heading{
