@@ -23,7 +23,15 @@
         </div>
       </div>
     
-      <audio id="song" loop="" src="./hbd.mp3"></audio>
+      <div class="music-icon-container">
+        <button id="musicToggle" class="music-icon">
+          <img id="musicIcon" src="sound-on.png" alt="Music Toggle">
+        </button>
+        <audio id="backgroundMusic" loop>
+          <source src="./hbd.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
       
     <div class="container">
         <div class="hero-section">
@@ -123,8 +131,8 @@
               <span class="request">One request from my side....</span> <br>
               Please never leave me alone; you know how emotional I am. I'll do everything possible to stay in touch with you. 
               Thank you so much for always understanding and caring for me. I hope our bond gets stronger day by day and ladai 
-              kabhi na ho... Tum mere liye bilkul mere family ki trh ho aur hmesha rhogi more than a friend like a family like 
-              my friend..my sister...my goodwisher.<br><br>
+              kabhi na ho... Tum mere liye bilkul mere family ki trh ho aur hmesha rhogi more than a friend like a family, 
+              my best-friend...my well wisher.<br><br>
 
               <span class="once">Once again Happy Happy Happy Birthday to my Bestfriend..!!</span>
             </p>
@@ -168,4 +176,22 @@
             jQuery('.cssload-container').parent().fadeOut("slow");
      }, 1 );
     });
+
+    const musicToggle = document.getElementById('musicToggle');
+const musicIcon = document.getElementById('musicIcon');
+const backgroundMusic = document.getElementById('backgroundMusic');
+
+// Paths to sound-on and sound-off icons
+const soundOnIcon = 'sound-on.png'; // Replace with your "sound on" icon path
+const soundOffIcon = 'sound-off.png'; // Replace with your "sound off" icon path
+
+musicToggle.addEventListener('click', () => {
+  if (backgroundMusic.paused) {
+    backgroundMusic.play();
+    musicIcon.src = soundOnIcon; // Set "sound on" icon
+  } else {
+    backgroundMusic.pause();
+    musicIcon.src = soundOffIcon; // Set "sound off" icon
+  }
+});
 </script>
