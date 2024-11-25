@@ -580,14 +580,16 @@ body{
     justify-content:center;
     align-items: center;
     gap: 2rem;
+    padding-bottom: 50px;
 }
 
 .role{
-    font-size: 40px;
+    font-size: 35px;
 }
 
 .hero-section-right{
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-x: visible;
 }
 /*Mid Section CSS*/
 .mid-section{
@@ -692,4 +694,8 @@ body{
   .footer-faded-text{
     font-size:25px;
   }
+}
+
+.music-icon-container {
+  position: absolute;
 }
